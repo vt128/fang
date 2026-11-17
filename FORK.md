@@ -12,11 +12,21 @@ Fang's help or error appearance.
   `b5b71473471de436a3d1f1115d750338da800143` on `feat/upstream-explicit-background-20261117`.
   Proposed upstream in [PR #111](https://github.com/charmbracelet/fang/pull/111).
   The pull request is open; no upstream acceptance is claimed here.
+- Optional-argument order backport:
+  `f6ad58575305c9684d987374a3f6b98f9b73c704`.
+  Its equivalent upstream-main change is
+  `a43d8670231d947103c3d1473391efd6f9a72c19`, proposed separately in
+  [PR #112](https://github.com/charmbracelet/fang/pull/112).
 
 `WithDarkBackground(true)` and `WithDarkBackground(false)` explicitly choose
 a background and skip terminal detection before any query can run. Omitting
 the option preserves upstream's default detection. The existing color scheme,
 help/error renderer, signal options and execution lifecycle are unchanged.
+
+Custom optional arguments stay in their authored positions: for example,
+`run [SERIAL] FILE` is displayed in that order. The existing reserved
+`[command]` / `[args]` normalization and trailing flags are preserved. This
+presentation correction does not change Cobra command definitions or parsing.
 
 A separate module-path adaptation changes this branch to
 `github.com/vt128/fang/v2` and updates its own example and external test imports.
