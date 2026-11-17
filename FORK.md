@@ -20,8 +20,8 @@ Fang's help or error appearance.
 
 `WithDarkBackground(true)` and `WithDarkBackground(false)` explicitly choose
 a background and skip terminal detection before any query can run. Omitting
-the option preserves upstream's default detection. The existing color scheme,
-help/error renderer, signal options and execution lifecycle are unchanged.
+the option preserves upstream's default detection. The background override does
+not change the existing color scheme, signal options or execution lifecycle.
 
 Custom optional arguments stay in their authored positions: for example,
 `run [SERIAL] FILE` is displayed in that order. The existing reserved
