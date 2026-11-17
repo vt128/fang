@@ -10,8 +10,8 @@ Fang's help or error appearance.
 - Equivalent pure upstream change based on upstream main
   `e4b230db8d1536e25c644d19431e777d1e209b69`:
   `b5b71473471de436a3d1f1115d750338da800143` on `feat/upstream-explicit-background-20261117`.
-  The upstream pull request is recorded separately once opened; no upstream
-  acceptance is claimed here.
+  Proposed upstream in [PR #111](https://github.com/charmbracelet/fang/pull/111).
+  The pull request is open; no upstream acceptance is claimed here.
 
 `WithDarkBackground(true)` and `WithDarkBackground(false)` explicitly choose
 a background and skip terminal detection before any query can run. Omitting
