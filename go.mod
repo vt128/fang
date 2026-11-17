@@ -1,4 +1,4 @@
-module charm.land/fang/v2
+module github.com/vt128/fang/v2
 
 go 1.25.0
 

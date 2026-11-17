@@ -7,8 +7,8 @@ import (
 	"os"
 	"time"
 
-	"charm.land/fang/v2"
 	"github.com/spf13/cobra"
+	"github.com/vt128/fang/v2"
 )
 
 func main() {

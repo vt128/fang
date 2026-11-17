@@ -7,11 +7,11 @@ import (
 	"io"
 	"testing"
 
-	"charm.land/fang/v2"
 	"charm.land/lipgloss/v2"
 	"github.com/charmbracelet/x/exp/golden"
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
+	"github.com/vt128/fang/v2"
 )
 
 func TestSetup(t *testing.T) {

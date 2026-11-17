@@ -37,6 +37,15 @@ The CLI starter kit. A small, experimental library for batteries-included [Cobra
     Mango also uses _roff_ directly instead of converting from markdown, so it
     should render better looking man pages.
 
+## nb1 runtime fork
+
+This branch is a narrow runtime fork of the official Fang v2.0.1 release.
+It retains Fang's renderer and adds an explicit background preference so an
+application can avoid terminal background queries. The module path is
+`github.com/vt128/fang/v2` for normal immutable Go module consumption, without a
+`replace` directive. See [FORK.md](FORK.md) for the upstream source and patch
+mapping. Upstream ownership and the original license remain unchanged.
+
 ## Usage
 
 To use it, invoke `fang.Execute` passing your root `*cobra.Command`:
@@ -48,7 +57,7 @@ import (
 	"context"
 	"os"
 
-	"github.com/charmbracelet/fang"
+	"github.com/vt128/fang/v2"
 	"github.com/spf13/cobra"
 )
 
